@@ -2,11 +2,20 @@
  font-family: sans-serif;
 }
 
+.container .widget-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
 .container .widget {
+    flex-grow: 1;
     background-color: rgb(236, 236, 237);
     border: 1px solid black;
-    width: 400px;
+    width: 24%;
+    max-width: 24%;
     margin-bottom: 40px;
+    margin-right: 10px;
 }
 
 .container .widget .header {
@@ -26,7 +35,6 @@
 .container .widget .content .title {
     font-size: 12px;
 }
-
 
 .white-arrow {
     background-color: white;
