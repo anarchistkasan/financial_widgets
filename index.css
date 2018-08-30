@@ -55,11 +55,21 @@
     clip-path: polygon(0 0, 80% 0, 100% 40%, 100% 60%, 80% 100%, 0 100%);
 }
 
+.container .widget .left-side-content:hover {
+    background-color: red;
+    color: white
+} 
+
 .container .widget .right-side-content {
     flex-grow: 2;
     text-align: right;
     color: green;
     clip-path: polygon(0 40%, 20% 0, 100% 0, 100% 100%, 20% 100%, 0 60%);
+}
+
+.container .widget .right-side-content:hover {
+    background-color: green; 
+    color: white;
 }
 
 .triangle-up {
