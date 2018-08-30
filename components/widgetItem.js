@@ -14,12 +14,11 @@ export function renderWidgetItem(dataElement) {
       <div class="content">
           <div class="left-side-content white-arrow">
           <p class="title">
-            ${getOperationCurrencyString("Sell", pair.substring(0, 2))}
+            ${getOperationCurrencyString("Sell", pair.substring(0, 3))}
           </p>  
           ${getValueElement(sell)}
           </div>
-          <div class="triangle-up">
-          </div>
+          <div class=${dataElement.rise ? "triangle-up" : "triangle-down"}></div>
           <div class="right-side-content white-arrow">
               <p class="title">
                 ${getOperationCurrencyString("Buy", pair.substring(4, 7))}
@@ -44,7 +43,7 @@ function getValueElement (sumString) {
   return (
     `<div>
         <span class="value">
-            ${sumStringStart}<b>${sumStringBold}</b>${sumStringEnd}
+            ${sumStringStart}<b>${sumStringBold}</b><span>${sumStringEnd}</span>
         </span>
     </div>`
   );

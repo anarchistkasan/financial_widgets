@@ -44,8 +44,12 @@
     padding-right: 5px;
 }
 
-.white-arrow .value b{
+.white-arrow .value b {
     font-size: 26px;
+}
+
+.white-arrow .value span {
+    vertical-align: super;
 }
 
 .container .widget .left-side-content {
@@ -73,10 +77,19 @@
 }
 
 .triangle-up {
-    padding-top: 10px;
+    margin-top: 10px;
     width: 0; 
     height: 0; 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 20px solid green;
+}
+
+.triangle-down {
+    margin-top: 10px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 20px solid red;
 }
