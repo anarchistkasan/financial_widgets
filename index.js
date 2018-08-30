@@ -11,4 +11,4 @@ const data = [
 
 
 
-let val = hello(); // val is "Hello";
+let val = hello();
