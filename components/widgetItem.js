@@ -1,5 +1,4 @@
 export function renderWidgetItem(dataElement) {
-  console.log("renderWidgetItem", dataElement);
 
   let {pair, buy,sell} = dataElement;
   sell = sell.toString();

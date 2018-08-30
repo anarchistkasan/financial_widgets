@@ -1,7 +1,6 @@
 import {renderWidgetItem} from './widgetItem.js';
 
 export function renderWidgetItems(dataTORender) {
-  console.log("renderWidgetItems");
 
   return (
     `<div class="widget-list">

@@ -15,15 +15,12 @@ document.querySelector('#main').innerHTML = renderWidgetItems(data);
 
 let testButton = document.querySelector("#test-button");
 
-function startTesting(e) {
-    console.log("start");
-    if (e == undefined) return;
+function startTesting() {
     const testContainer = document.querySelector("#test-container");
 
     if (testButton.innerHTML.indexOf("Start") > -1) {
         testButton.innerHTML = "Stop testing";
         setIntervalId = setInterval(function() {
-            console.log("timeout");
             testContainer.innerHTML = renderWidgetItems(alternateData(data));
         }, 1000);
     } else {
@@ -54,7 +51,7 @@ function getNewValue (value) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    testButton.onclick = function(e) {startTesting(e)};
+    testButton.onclick = function() {startTesting()};
  });
 
 
